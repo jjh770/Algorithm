@@ -1,3 +1,5 @@
+using System.Text;
+
 namespace Exam
 {
     class Program
@@ -19,11 +21,13 @@ namespace Exam
                         isPrime[j] = false;
                 }
             }
+
+            StringBuilder sb = new StringBuilder();
             for (int i = n; i <= m; i++)
-            {
                 if (isPrime[i])
-                    Console.WriteLine(i + " ");
-            }
+                    sb.AppendLine(i + " ");
+
+            Console.WriteLine(sb.ToString());
         }
     }
 }

@@ -13,10 +13,8 @@ namespace Exam
 
             for (int i = 0; i < n; i++)
             {
-                string[] addrPswd = Console.ReadLine().Split(' ');
-                string addr = addrPswd[0];
-                string pswd = addrPswd[1];
-                addrDic.Add(addr, pswd);
+                string[] addrPswd = Console.ReadLine().Split();
+                addrDic.Add(addrPswd[0], addrPswd[1]);
             }
 
             for (int i = 0; i < m; i++)
